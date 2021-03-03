@@ -29,7 +29,7 @@ Businesses: Fresh Fruits Lab, Platform 1094, Herit8ge
 
 ## Technologies used
 
-1. Flask App (Back-end Framework)
+1. Flask (Back-end Framework)
 2. Chart.js (Front-end charts)
 3. API endpoints
 4. Selenium
