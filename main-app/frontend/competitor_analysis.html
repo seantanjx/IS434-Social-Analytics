@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Fresh Fruit Lab Group - Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.css" rel="stylesheet">
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <img src='img/company_logo.png' width="130" height="70"> 
+        </div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Overview</span></a>
+      </li>
+      <hr class="sidebar-divider my-0">
+      <div class="sidebar-heading">
+        Fresh Fruits Lab
+      </div>
+      <li class="nav-item active">
+        <a class="nav-link" href="post_analysis.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Post Analysis</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="competitor_analysis.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Competitor Analysis</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="reviews_analysis.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Reviews Analysis</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="influencer_analysis.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Influencer Analysis</span></a>
+      </li>
+
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Interface
+      </div>
+
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Pages</span>
+        </a>
+        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Raw Data:</h6>
+            <a class="collapse-item" href="index.html">Platform 1094</a>
+            <a class="collapse-item" href="index.html">Fresh Fruit Lab</a>
+            <a class="collapse-item" href="index.html">Herit8ge</a>
+          </div>
+        </div>
+      </li>
+
+
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.ffl.com.sg/">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Website</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Kelvin Tan</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Competitor Analysis</h1>
+            <a href="javascript:genScreenshot()" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+          </div>
+          <a id="test"></a>
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h4 mb-0 text-gray-800">Competitor Overview</h1>
+          </div>
+          
+
+          <div class="row">
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-4 col-md-6 mb-4">
+              <div class="card border-left-secondary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Fresh Fruits Lab</div>
+                      <div class="text-xs font-weight-bold">Fruity-focused, artfully designed in a laboratory style. At Fresh Fruits Lab, our menu is specially crafted to infuse fruity  elements into our delicacies. Fresh Fruits Lab's passion for experimenting is key to creating the perfect dining experience.</div>
+                      <br>
+                      <div class="h5 mb-0 font-weight-bold text-gray-600" id="ffl_post"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fab fa-instagram fa-3x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Windowswill Pies</div>
+                        <div class="text-xs font-weight-bold">Since Windowsill Pies was founded, we have been obsessed with baking the best pies and tarts you can imagine in our little island. We dedicate our days to creating exciting new flavour pairings and to re-inventing the way you enjoy classic recipes</div>
+                        <br>
+                        <div class="h5 mb-0 font-weight-bold text-gray-600" id="will_pies_post"></div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fab fa-instagram fa-3x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-left-warning shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Monsanco Enchanted Cafe</div>
+                        <div class="text-xs font-weight-bold">Most of the original, striking design elements were built or created by hand. The décor features warm, soothing colours, quirky designs, ambient lighting, authentic tree branches, beautiful wall murals and lovingly appointed, mismatched furniture with comfortable seating.</div>
+                        <br>
+                        <div class="h5 mb-0 font-weight-bold text-gray-600" id="enchanted_post"></div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fab fa-instagram fa-3x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Handlerbar Original</div>
+                        <div class="text-xs font-weight-bold">Handlebar is a small group of biker brothers owned company. We make growth decisions based on our own personal beliefs, ideologies and observing life. Not greed or race replica business. Entrepreneurial suicide to come clean of this fact.</div>
+                        <br>
+                        <div class="h5 mb-0 font-weight-bold text-gray-600" id="handlerbar_post"></div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fab fa-instagram fa-3x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-left-info shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Hatterstreet</div>
+                        <div class="text-xs font-weight-bold">Derived from an inspired vision of the Mad Hatter, norms are not what you will see within the culinary journey itself. The experience derives from the relationship between each of the Hatters life story, the food served, and the customer. Our desire is for each customer to leave Hatter Street with a distinct flavour, body of taste which would be ingrained in their memory.</div>
+                        <br>
+                        <div class="h5 mb-0 font-weight-bold text-gray-600" id="hatterstreet_post"></div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fab fa-instagram fa-3x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-left-danger shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">The White Rabbit</div>
+                        <div class="text-xs font-weight-bold">Established in 2008, The White Rabbit is a critically-acclaimed landmark known for its European classics, outstanding table-side service and overall exquisite dining experience. Combining classic European cuisine and anachronistic architecture, The White Rabbit transports all who travel down its proverbial rabbit hole to another world. </div>
+                        <br>
+                        <div class="h5 mb-0 font-weight-bold text-gray-600" id="rabbit_post"></div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fab fa-instagram fa-3x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h4 mb-0 text-gray-800">Competitors Comparison</h1>
+          </div>
+
+          <div class="row">
+            <!-- Area Chart -->
+            <div class="col-xl-6 col-lg-7">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Likes & Comments (Competitors)</h6>
+                    <a data-html="true" href="#" class="show-option" title="<u>About</u> <br/> This chart shows how fresh fruits lab are performing compared to some of its competitor who are in the same industry. <br><br> <u>Insights</u> <br> We can tell that in terms of likes & comments on social media FFl are not performing as well compared to its competitors. Next we will analysis on the types of captions and post their competitor use to garner more engagement."><i class="fas fa-info-circle fa-2x"></i></a>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="competitors_likes_comments"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-6 col-lg-7">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-info">Engagement Rate (Competitors)</h6>
+                    <a data-html="true" href="#" class="show-option" title="<u>About</u> <br/> This chart shows how fresh fruits lab are performing compared to some of its competitor who are in the same industry. <br><br> <u>Insights</u> <br> We can tell that in terms of engagement calculated based on our metric, FFL are on par with most of it's competitor. To gather more insights we will be analysing Handle Bar Original to identify their social media strategy on how they are performing so well"><i class="fas fa-info-circle fa-2x"></i></a>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="competitors_engagement"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h4 mb-0 text-gray-800">Top 10% Posts from Competitor - Likes & Comments</h1>
+          </div>
+
+          <div class="row">
+            <div class="col-xl-12 col-lg-7">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Competitor Post (Likes & Comments) - Caption</h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="competitor_post"></canvas>
+                    </div>
+                  </div>
+                </div>
+            </div>
+           
+          </div>
+
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h4 mb-0 text-gray-800">Top Hashtag</h1>
+          </div>
+
+          <div class="row">
+            <div class="col-xl-10 col-lg-7">
+                <img src="./img/cloud.png" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-xl-2 col-lg-7">
+                <table class="table table-earnings table-earnings__challenge">
+                    <thead>
+                      <tr>
+                        <th>Hashtag</th>
+                        <th>Count</th>
+                      </tr>
+                    </thead>
+                    <tbody id="data">
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+
+          <br>
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h4 mb-0 text-gray-800">Competitor Type of Post</h1>
+          </div>
+
+          <div class="alert alert-info" role="alert">
+            Based on the analysis on different post type for all 5 competitors we can tell that by posting post type SideCar will garner more likes and comments. It shows the similar result as the analysis we did for Fresh Fruit Lab - this shows that FFL should consider posting more SideCar image to engage their audience.
+          </div>
+
+          <div class="row">
+            <!-- Area Chart -->
+            <div class="col-xl-4 col-lg-7">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Type of Post - Image</h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="competitor_post_type"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-7">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Type of Post - SideCar</h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="competitor_post_sidecar"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-7">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Type of Post - Video</h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="competitor_post_video"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h4 mb-0 text-gray-800">Competitor Post Frequency</h1>
+          </div>
+
+          <div class="row">
+            <!-- Area Chart -->
+            <div class="col-xl-6 col-lg-7">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Enchanted Post Frequency (Instagram)</h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="enchanted_freq"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-7">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Handle Bar Original Post Frequency (Instagram)</h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="handlebar_freq"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <!-- Area Chart -->
+            <div class="col-xl-6 col-lg-7">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Hatterstreet Post Frequency (Instagram)</h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="hatterstreet_freq"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-7">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">White Rabbit SG Post Frequency (Instagram)</h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="whiterabbite_freq"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h4 mb-0 text-gray-800">Competitor Post Interaction Type (Instagram)</h1>
+          </div>
+
+          <div class="row">
+            <!-- Area Chart -->
+            <div class="col-xl-12 col-lg-7">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Interaction Type</h6>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="interaction_type"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+  
+
+
+
+  
+         
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+      <br>
+      <br>
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2020</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo_engagement.js"></script>
+  <script src="js/demo/chart-bar-demo_engagement.js"></script>
+  <script src="js/demo/chart-line.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+
+  <script>
+    /*Populate dashboard - Trigger backend*/
+    $(document).ready(function(){
+      loadCompetitorPostCount()
+      competitorsLikesComments()
+      competitorsEngagement()
+      competitorPost()
+      competitorPostType()
+      competitorPostTypeSideCar()
+      competitorPostTypeVideo()
+      loadHashtag()
+      enchantedFreqInsta()
+      handlerbarFreqInsta()
+      hatterstreetFreqInsta()
+      whiterabbitFreqInsta()
+      interactionType()
+      $( ".show-option" ).tooltip({
+        show: {
+        effect: "slideUp",
+        delay: 300
+        }
+      });
+    });
+    
+    function loadCompetitorPostCount() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          data = JSON.parse(this.responseText)["result"]
+          console.log(data)
+          document.getElementById("ffl_post").innerHTML = "Posts: " + data["freshfruitslab"]
+          document.getElementById("will_pies_post").innerHTML = "Posts: " + data["windowsillpies"]
+          document.getElementById("enchanted_post").innerHTML = "Posts: " + data["enchantedcafe"]
+          document.getElementById("handlerbar_post").innerHTML = "Posts: " + data["handlebaroriginal"]
+          document.getElementById("hatterstreet_post").innerHTML = "Posts: " + data["hatterstreet"]
+          document.getElementById("rabbit_post").innerHTML = "Posts: " + data["thewhiterabbitsg"]
+        }
+      };
+      xhttp.open("GET", "http://127.0.0.1:5008/competitor/post_number", true);
+      xhttp.send();
+    }
+
+
+    function loadHashtag() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          table = ""
+          data = JSON.parse(this.responseText)["result"]
+          for (info of data){
+            console.log(info)
+            table += "<tr><td>" + info[0] + "</td><td>" + info[1].toString() + "</td></tr>"
+          }
+          console.log(table)
+          $("#data").append(table)
+
+        }
+      };
+      xhttp.open("GET", "http://127.0.0.1:5008/competitor/hashtag", true);
+      xhttp.send();
+    }
+
+    function genScreenshot() {
+      html2canvas(document.body, {
+        onrendered: function(canvas) {
+        $('#box1').html("");
+        $('#box1').append(canvas);
+        
+        if (navigator.userAgent.indexOf("MSIE ") > 0 || 
+            navigator.userAgent.match(/Trident.*rv\:11\./)) 
+          {
+            var blob = canvas.msToBlob();
+            window.navigator.msSaveBlob(blob,'Competitor Analysis.png');
+          }
+        else {
+          $('#test').attr('href', canvas.toDataURL("image/png"));
+          $('#test').attr('download','Competitor Analysis.png');
+          $('#test')[0].click();
+        }
+      }
+      });
+    }
+
+
+   
+
+
+    /*Chart*/ 
+
+   
+
+  </script>
+
+</body>
+
+</html>

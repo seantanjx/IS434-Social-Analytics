@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Fresh Fruit Lab Group - Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+  <style>
+    .full-box-width{
+      width: 18vw;
+    }
+    </style>
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <img src='img/company_logo.png' width="130" height="70"> 
+        </div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Overview</span></a>
+      </li>
+      <hr class="sidebar-divider my-0">
+      <div class="sidebar-heading">
+        Fresh Fruits Lab
+      </div>
+      <li class="nav-item active">
+        <a class="nav-link" href="post_analysis.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Post Analysis</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="competitor_analysis.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Competitor Analysis</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="reviews_analysis.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Reviews Analysis</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="influencer_analysis.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Influencer Analysis</span></a>
+      </li>
+
+
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Interface
+      </div>
+
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Pages</span>
+          
+        </a>
+        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Raw Data:</h6>
+            <a class="collapse-item" href="javascript:getCSV()">Platform 1094</a>
+            <a class="collapse-item" href="index.html">Fresh Fruit Lab</a>
+            <a class="collapse-item" href="index.html">Herit8ge</a>
+          </div>
+        </div>
+      </li>
+
+
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.ffl.com.sg/">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Website</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Kelvin Tan</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            <a href="javascript:genScreenshot()" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+          </div>
+          <a id="test"></a>
+
+          <div class="alert alert-info" role="alert">
+            The purpose of the overview page is to show the general information of all 3 cafes.
+            <br>
+            <br>
+            Based on the result here our team decided to delve deeper into the cafe that is not performing that well and see what is the cause of the low engagement rate and see what potential solutions can Fresh Fruits Lab Group apply to improve their social media engagement rate. 
+          </div>
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h4 mb-0 text-gray-800">Overview</h1>
+          </div>
+          <div class="row">
+
+            <!-- Area Chart -->
+            <div class="col-xl-8 col-lg-7">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Instagram Engagement Rate (Likes)</h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="insta_engage_likes"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          <!-- Pie Chart -->
+          <div class="col-xl-4 col-lg-5">
+            <div class="card shadow mb-4">
+              <!-- Card Header - Dropdown -->
+              <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Instagram Engagement Rate (Comments)</h6>
+              </div>
+              <!-- Card Body -->
+              <div class="card-body">
+                <div class="chart-pie pt-4 pb-2">
+                  <canvas id="myPieChart_insta"></canvas>
+                </div>
+                <div class="mt-4 text-center small">
+                  <span class="mr-2">
+                    <i class="fas fa-circle text-primary"></i> Platform 1094
+                  </span>
+                  <span class="mr-2">
+                    <i class="fas fa-circle text-success"></i> Fresh Fruit Lab
+                  </span>
+                  <span class="mr-2">
+                    <i class="fas fa-circle text-info"></i> Herit8ge
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <!-- Pie Chart -->
+        <div class="col-xl-4 col-lg-5">
+          <div class="card shadow mb-4">
+            <!-- Card Header - Dropdown -->
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+              <h6 class="m-0 font-weight-bold text-primary">Facebook Engagement Rate (Comments)</h6>
+            </div>
+            <!-- Card Body -->
+            <div class="card-body">
+              <div class="chart-pie pt-4 pb-2">
+                <canvas id="myPieChart_fb"></canvas>
+              </div>
+              <div class="mt-4 text-center small">
+                <span class="mr-2">
+                  <i class="fas fa-circle text-primary"></i> Platform 1094
+                </span>
+                <span class="mr-2">
+                  <i class="fas fa-circle text-success"></i> Fresh Fruit Lab
+                </span>
+                <span class="mr-2">
+                  <i class="fas fa-circle text-info"></i> Herit8ge
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Area Chart -->
+          <div class="col-xl-8 col-lg-7">
+            <div class="card shadow mb-4">
+              <!-- Card Header - Dropdown -->
+              <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Facebook Engagement Rate (Likes)</h6>
+              </div>
+              <!-- Card Body -->
+              <div class="card-body">
+                <div class="chart-area">
+                  <canvas id="fb_engage_likes"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+        <div class='row'>
+        <div class="col-sm">
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h4 mb-0 text-gray-800">Platform 1094</h1>
+          </div>
+          <!-- Content Row -->
+          <div class="row">
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="row-xl-4 row-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 full-box-width" >
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Instagram (Followers)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="platform_followers"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fab fa-instagram fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="row-xl-4 row-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 full-box-width" >
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Instagram (No. of Posts)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="platform_post"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fas fa-file-image	fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="row-xl-4 row-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 full-box-width" >
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Instagram (Mentions)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="aa"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fas fa-user-tag	fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+       
+
+          <div class="row-xl-4 row-md-6 mb-4">
+            <div class="card border-left-secondary shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2 full-box-width" >
+                    <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Facebook (Followers)</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800" id="">9,795</div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fab fa-facebook fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row-xl-4 row-md-6 mb-4">
+            <div class="card border-left-warning shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2 full-box-width" >
+                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Facebook (Average number of likes)</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800" id="fb_platform_likes"></div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fab fa fa-thumbs-up fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row-xl-4 row-md-6 mb-4">
+            <div class="card border-left-dark shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2 full-box-width" >
+                    <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">Instagram (Average number of Likes)</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800" id="platform_likes"></div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fab fa fa-thumbs-up fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h4 mb-0 text-gray-800">Fresh Fruit Lab</h1>
+          </div>
+          <div class="row">
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="row-xl-4 row-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 full-box-width" >
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Instagram (Followers)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="freshfruitlab"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fab fa-instagram fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="row-xl-4 row-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 full-box-width" >
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Instagram (No. of Posts)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="ffl_post"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fas fa-file-image fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="row-xl-4 row-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 full-box-width" >
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Instagram (Mentions)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="ffl_mention"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fas fa-user-tag	fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row-xl-4 row-md-6 mb-4">
+              <div class="card border-left-secondary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 full-box-width" >
+                      <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Facebook (Followers)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="">5,533</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fab fa-facebook fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="row-xl-4 row-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 full-box-width" >
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Facebook (Average number of Likes)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="fb_ffl_likes"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fab fa fa-thumbs-up fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="row-xl-4 row-md-6 mb-4">
+              <div class="card border-left-dark shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 full-box-width" >
+                      <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">Instagram (Average number of Likes)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="ffl_likes"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fab fa fa-thumbs-up fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h4 mb-0 text-gray-800">Herit8ge</h1>
+          </div>
+          <div class="row">
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="row-xl-4 row-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 full-box-width" >
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Instagram (Followers)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="herit8ge_followers"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fab fa-instagram fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="row-xl-4 row-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 full-box-width" >
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Instagram (No. of Posts)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="herit8ge_post"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fas fa-file-image fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="row-xl-4 row-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 full-box-width" >
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Instagram (Mentions)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="herit8ge_mention"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fas fa-user-tag	fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row-xl-4 row-md-6 mb-4">
+              <div class="card border-left-secondary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 full-box-width" >
+                      <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Facebook (Followers)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="">428</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fab fa-facebook fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="row-xl-4 row-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 full-box-width" >
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Facebook (Average number of Likes)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="fb_heri_likes"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fab fa fa-thumbs-up fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="row-xl-4 row-md-6 mb-4">
+              <div class="card border-left-dark shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 full-box-width" >
+                      <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">Instagram (Average number of Likes)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="heri_likes"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fab fa fa-thumbs-up fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div id="container">
+          <div id="CSVTable"></div>
+      </div>
+
+          
+
+
+          
+         
+
+
+          
+
+          
+          <!-- Remove data to separate file for referece -->
+  
+         
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2020</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo_engagement.js"></script>
+  <script src="js/demo/chart-bar-demo_engagement.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="//jquerycsvtotable.googlecode.com/files/jquery.csvToTable.js"></script>
+  <script src="CSVtoTable/js/jquery-1.4.2.min.js"></script>
+  <script src="CSVtoTable/js/jquery.csvToTable.js"></script>
+  <script src="CSVtoTable/js/jquery.tablesorter.min.js"></script>
+
+
+
+  <script>
+    /*Populate dashboard - Trigger backend*/
+    $(document).ready(function(){
+      loadfollowers()
+      loadPosts()
+      taggedPosts()
+      facebookPost()
+      instagramLikes()
+      facebookLikes()
+      loadInstaEngagementLikes()
+      loadInstaEngagementComments()
+      loadFbEngagementLikes()
+      loadFbEngagementComments()
+    });
+    
+
+    function loadfollowers() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          data = JSON.parse(this.responseText)
+          platform = data["followers"][0].split(":")[1]
+          document.getElementById("platform_followers").innerHTML = platform
+          ffl = data["followers"][1].split(":")[1]
+          document.getElementById("freshfruitlab").innerHTML = ffl
+          heri = data["followers"][2].split(":")[1]
+          document.getElementById("herit8ge_followers").innerHTML = heri
+        }
+      };
+      xhttp.open("GET", "http://localhost:5000/insta/numFollowers", true);
+      xhttp.send();
+    }
+
+    function loadPosts() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          data = JSON.parse(this.responseText)
+          platform = data["num_post"][0].split(":")[1]
+          document.getElementById("platform_post").innerHTML = platform
+          ffl = data["num_post"][1].split(":")[1]
+          document.getElementById("ffl_post").innerHTML = ffl
+          heri = data["num_post"][2].split(":")[1]
+          document.getElementById("herit8ge_post").innerHTML = heri
+        }
+      };
+      xhttp.open("GET", "http://localhost:5000/insta/numberPost", true);
+      xhttp.send();
+    }
+
+    function taggedPosts() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          data = JSON.parse(this.responseText)
+          platform = data["platform1094"]
+          document.getElementById("aa").innerHTML = platform
+          ffl = data["freshfruitlab"]
+          document.getElementById("ffl_mention").innerHTML = ffl
+          heri = data["herit8ge"]
+          document.getElementById("herit8ge_mention").innerHTML = heri
+        }
+      };
+      xhttp.open("GET", "http://localhost:5000/insta/taggedPost", true);
+      xhttp.send();
+    }
+
+    function facebookPost() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          data = JSON.parse(this.responseText)
+          platform = data["platform1094"]
+          document.getElementById("facebook_post").innerHTML = platform
+          ffl = data["freshfruitlab"]
+          document.getElementById("ffl_post_fb").innerHTML = ffl
+          heri = data["herit8ge"]
+          document.getElementById("herit8ge_post_fb").innerHTML = heri
+        }
+      };
+      xhttp.open("GET", "http://localhost:5002/fb/numPosts", true);
+      xhttp.send();
+    }
+
+    function instagramLikes() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          data = JSON.parse(this.responseText)
+          likes_data = data["average_likes"]
+          console.log(likes_data)
+          instagram_info = likes_data["Instagram"]
+          document.getElementById("platform_likes").innerHTML = instagram_info[0]
+          document.getElementById("ffl_likes").innerHTML = instagram_info[1]
+          document.getElementById("heri_likes").innerHTML = instagram_info[2]
+
+        }
+      };
+      xhttp.open("GET", "http://localhost:5000/insta/average_likes", true);
+      xhttp.send();
+    }
+
+    function facebookLikes() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          data = JSON.parse(this.responseText)
+          likes_data = data["average_likes"]
+          facebook_info = likes_data["Facebook"]
+          document.getElementById("fb_platform_likes").innerHTML = facebook_info[0]
+          document.getElementById("fb_ffl_likes").innerHTML = facebook_info[1]
+          document.getElementById("fb_heri_likes").innerHTML = facebook_info[2]
+
+        }
+      };
+      xhttp.open("GET", "http://localhost:5000/insta/average_likes", true);
+      xhttp.send();
+    }
+
+    function genScreenshot() {
+      html2canvas(document.body, {
+        onrendered: function(canvas) {
+        $('#box1').html("");
+        $('#box1').append(canvas);
+        
+        if (navigator.userAgent.indexOf("MSIE ") > 0 || 
+            navigator.userAgent.match(/Trident.*rv\:11\./)) 
+          {
+            var blob = canvas.msToBlob();
+            window.navigator.msSaveBlob(blob,'Overview.png');
+          }
+        else {
+          $('#test').attr('href', canvas.toDataURL("image/png"));
+          $('#test').attr('download','Overview.png');
+          $('#test')[0].click();
+        }
+      }
+      });
+    }
+
+
+    /*Chart*/ 
+
+   
+
+  </script>
+
+</body>
+
+</html>

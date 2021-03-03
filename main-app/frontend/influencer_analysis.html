@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Fresh Fruit Lab Group - Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.css" rel="stylesheet">
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <img src='img/company_logo.png' width="130" height="70"> 
+        </div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Overview</span></a>
+      </li>
+      <hr class="sidebar-divider my-0">
+      <div class="sidebar-heading">
+        Fresh Fruits Lab
+      </div>
+      <li class="nav-item active">
+        <a class="nav-link" href="post_analysis.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Post Analysis</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="competitor_analysis.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Competitor Analysis</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="reviews_analysis.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Reviews Analysis</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="influencer_analysis.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Influencer Analysis</span></a>
+      </li>
+
+
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Interface
+      </div>
+
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Pages</span>
+        </a>
+        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Raw Data:</h6>
+            <a class="collapse-item" href="index.html">Platform 1094</a>
+            <a class="collapse-item" href="index.html">Fresh Fruit Lab</a>
+            <a class="collapse-item" href="index.html">Herit8ge</a>
+          </div>
+        </div>
+      </li>
+
+
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.ffl.com.sg/">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Website</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Kelvin Tan</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Influencer Analysis</h1>
+            <a href="javascript:genScreenshot()" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+          </div>
+          <a id="test"></a>
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h4 mb-0 text-gray-800">Influencer Overview</h1>
+          </div>
+          <div class="row">
+            <!-- Area Chart -->
+            <div class="col-xl-12 col-lg-12">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Influencer's Engagement Rate</h6>
+                  <a data-html="true" href="#" class="show-option" title="<u>About</u> <br/>
+                     This chart shows the influencer engagement rate based on the influencers' likes for their individual post for FFL and the number of followers which they have. The influencers are instagram users who tagged FFL in their post.
+                     
+                     <br><br> <u>Insights</u> <br> From the chart, we can see that most of the FFL's influencers are within the 100,000 followers and 1000 likes range. However, there are outliers such as famous food bloggers - ladyironchef, melissackoh, iamjamieyeo who have high number of followers and garners higher number of likes. 
+                     From here we recommend FFL to collaborate with users with higher number of followers so that they are able to engage more people through other users (influencers).">
+                     
+                     <i class="fas fa-info-circle fa-2x"></i></a>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="influencer_engagement_chart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+              <div class="col-xl-6 col-lg-7">
+                  <h4>Betweenness Centrality</h4>
+                  <img src="./img/betweenness.jpg" class="img-fluid" alt="Responsive image">
+              </div>
+              <div class="col-xl-6 col-lg-7">
+                <h4>Degree Centrality</h4>
+                <img src="./img/degree.jpg" class="img-fluid" alt="Responsive image">
+              </div>
+            </div>
+            <div class="alert alert-info" role="alert">
+                <strong>Betweenness centrality</strong>
+                <br>
+                By calculating the betweenness centrality of the network of followers, we are able to visualize which are the key influencers and how important they are in sharing information to other followers. From the network graph generated, we can see that meimei_is_the_cutest has the highest betweenness centrality among other nodes.
+                <br>
+                <br>
+                <strong>Analysis</strong>
+                <br>
+                With a high betweenness centrality, it shows that this user is very important in connecting the followers in the network. Just to recap, it means that she has fallen on most of the shortest path between one follower to another and is critical in spreading information fast, between the followers in the network. On top of that, after looking at her instagram page, we found out that she is actually a food blogger, which makes her a perfect fit for FFL to engage for their next social media campaign.
+                <br>
+                https://www.instagram.com/meimei_is_the_cutest/
+
+                <br>
+                <br>
+                <strong>Degree Centrality</strong>
+                <br>
+
+                Degree centrality allow us to identify key influencers in the network that has the highest potential influencing power and sharing capability.
+                <br>
+                <br>
+                <strong>Analysis </strong>
+                <br>
+                From the network generated, we can see that melissackoh has the highest degree centrality in the network.This shows that melissackoh has the potential to reach many instagram users.
+                In addition, melissackoh has around 264k influencers and is verified on instagram, hence this shows that she has high credibility and potential to reach many instagram users. So we will recommend FFL to engage melissackoh to be FFL promoter / influencer for the next social media marketing campaign. 
+                <br>
+                https://www.instagram.com/melissackoh/
+
+
+              </div>
+          
+
+  
+         
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+      <br>
+      <br>
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2020</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo_engagement.js"></script>
+  <script src="js/demo/chart-bar-demo_engagement.js"></script>
+  <script src="js/demo/chart-line.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+
+  <script>
+    /*Populate dashboard - Trigger backend*/
+    $(document).ready(function(){
+      influencerStrength()
+    });
+    
+   
+    $( ".show-option" ).tooltip({
+      show: {
+      effect: "slideUp",
+      delay: 300
+      }
+    });
+
+    function genScreenshot() {
+      html2canvas(document.body, {
+        onrendered: function(canvas) {
+        $('#box1').html("");
+        $('#box1').append(canvas);
+        
+        if (navigator.userAgent.indexOf("MSIE ") > 0 || 
+            navigator.userAgent.match(/Trident.*rv\:11\./)) 
+          {
+            var blob = canvas.msToBlob();
+            window.navigator.msSaveBlob(blob,'Influencer Analysis.png');
+          }
+        else {
+          $('#test').attr('href', canvas.toDataURL("image/png"));
+          $('#test').attr('download','Influencer Analysis.png');
+          $('#test')[0].click();
+        }
+      }
+      });
+    }
+
+    /*Chart*/ 
+
+   
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Fresh Fruit Lab Group - Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <img src='img/company_logo.png' width="130" height="70"> 
+        </div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Overview</span></a>
+      </li>
+      <hr class="sidebar-divider my-0">
+      <div class="sidebar-heading">
+        Fresh Fruits Lab
+      </div>
+      <li class="nav-item active">
+        <a class="nav-link" href="post_analysis.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Post Analysis</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="competitor_analysis.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Competitor Analysis</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="reviews_analysis.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Reviews Analysis</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="influencer_analysis.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Influencer Analysis</span></a>
+      </li>
+
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Interface
+      </div>
+
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Pages</span>
+        </a>
+        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Raw Data:</h6>
+            <a class="collapse-item" href="index.html">Platform 1094</a>
+            <a class="collapse-item" href="index.html">Fresh Fruit Lab</a>
+            <a class="collapse-item" href="index.html">Herit8ge</a>
+          </div>
+        </div>
+      </li>
+
+
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.ffl.com.sg/">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Website</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Kelvin Tan</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Dashboard - Fresh Fruits Lab</h1>
+            <a href="javascript:genScreenshot()" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+          </div>
+          <a id="test"></a>
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h4 mb-0 text-gray-800">Post Category</h1>
+          </div>
+
+          <div class="row">
+
+            <!-- Area Chart -->
+            <div class="col-xl-8 col-lg-7">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Types of Post - Instagram</h6>
+                  <!-- <h6 class=" m-0 font-weight-bold text-primary fas fa-chart-bar fa-2x tooltiptextt"><span title="hello jello">Tooltip text</span></h6>
+                  <div title="them's hoverin' words"><h6 class=" m-0 font-weight-bold text-primary fas fa-chart-bar fa-2x tooltiptextt"></h6>jknfadsfdfadsf</div> -->
+                  <a data-html="true" href="#" class="show-option" title="<u>About</u> <br/> This chart shows the breakdown whether different type of post will affect the number of likes and comments. <br><br> <u>Insights</u> <br> Based on the data we can tell that sidecar (multiple image) will garner more likes and comments"><i class="fas fa-info-circle fa-2x"></i></a>
+                </div>
+
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="insta_posttype"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-25 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Image Count (Instagram)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="image_count"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-image fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+              <div class="card border-left-secondary shadow h-25 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Side Car Count (Instagram)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="sidecar_count"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-camera fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+              <div class="card border-left-warning shadow h-25 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Video Count (Instagram)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="video_count"></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-video fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+        <div class="row">
+
+          <!-- Pie Chart --> 
+          <div class="col-xl-2 col-md-6 mb-4">
+            <br>
+            <div class="card border-left-primary shadow h-5 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Competiton Post</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800" id="competiton_count"></div>
+                  </div>
+                  <div class="col-auto">
+                    <!-- <i class="fas fa-image fa-2x text-gray-300"></i> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="card border-left-info shadow h-5 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Featured Post</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800" id="featured_count"></div>
+                  </div>
+                  <div class="col-auto">
+                    <!-- <i class="fas fa-camera fa-2x text-gray-300"></i> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            
+            <div class="card border-left-warning shadow h-5 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Infographics Post</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800" id="info_count"></div>
+                  </div>
+                  <div class="col-auto">
+                    <!-- <i class="fas fa-video fa-2x text-gray-300"></i> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <br>
+          <div class="col-xl-2 col-md-6 mb-4">
+            <br>
+            <div class="card border-left-secondary shadow h-5 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Product Post</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800" id="product_count"></div>
+                  </div>
+                  <div class="col-auto">
+                    <!-- <i class="fas fa-video fa-2x text-gray-300"></i> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="card border-left-danger shadow h-5 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Promotion Post</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800" id="promotion_count"></div>
+                  </div>
+                  <div class="col-auto">
+                    <!-- <i class="fas fa-video fa-2x text-gray-300"></i> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="card border-left-success  h-5 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Others Post</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800" id="others_count"></div>
+                  </div>
+                  <div class="col-auto">
+                    <!-- <i class="fas fa-video fa-2x text-gray-300"></i> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+
+          <!-- Area Chart -->
+          <div class="col-xl-8 col-lg-7">
+            <div class="card shadow mb-4">
+              <!-- Card Header - Dropdown -->
+              <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+              <h6 class="m-0 font-weight-bold text-primary">Post Interaction Type - Instagram</h6>
+              </div>
+              <!-- Card Body -->
+              <div class="card-body">
+                <div class="chart-area">
+                  <canvas id="interaction_insta"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="row">
+
+        <!-- Pie Chart --> 
+        <div class="col-xl-4 col-lg-7">
+          <div class="card shadow mb-4">
+            <!-- Card Header - Dropdown -->
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+              <h6 class="m-0 font-weight-bold text-primary">Video Post Analysis (Duration vs Views)</h6>
+              <a data-html="true" href="#" class="show-option" title="<u>About</u> <br/> This chart shows whether there is correlation betwen duration of videos and views. <br><br> <u>Insights</u> <br> From this chart we can tell that the longer the video the more views it will get"><i class="fas fa-info-circle fa-2x"></i></a>
+            </div>
+            <!-- Card Body -->
+            <div class="card-body">
+              <div class="chart-area">
+                <canvas id="videoline"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Area Chart -->
+        <div class="col-xl-8 col-lg-7">
+          <div class="card shadow mb-4">
+            <!-- Card Header - Dropdown -->
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+            <h6 class="m-0 font-weight-bold text-primary">Post Interaction Type - Facebook</h6>
+            </div>
+            <!-- Card Body -->
+            <div class="card-body">
+              <div class="chart-area">
+                <canvas id="interaction_fb"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+        
+
+
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h4 mb-0 text-gray-800">Time of Post</h1>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+            <div class="col-xl-6 col-lg-7">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Day of Post (Instagram)</h6>
+                  <a data-html="true" href="#" class="show-option" title="<u>About</u> <br/> This chart shows the number of likes the post will get based on which day of the week did the admin post it. <br><br> <u>Insights</u> <br> We can tell that post on Wednesday will garner more likes. After some analysis we found out that FFL have a weekly wednesday special post on their instagram every wednesday"><i class="fas fa-info-circle fa-2x"></i></a>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="daypostinsta"></canvas>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-xl-6 col-lg-7">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Day of Post (Facebook)</h6>
+                    <a data-html="true" href="#" class="show-option" title="<u>About</u> <br/> This chart shows the number of likes the post will get based on which day of the week did the admin post it. <br><br> <u>Insights</u> <br> We can tell that post on tuesday and thursday will garner more likes. After some analysis we found out that FFL have promotional marketing campaign every tuesday and thursday for their weekly special"><i class="fas fa-info-circle fa-2x"></i></a>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="daypostfb"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xl-6 col-lg-7">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Time of Post (Instagram)</h6>
+                  <a data-html="true" href="#" class="show-option" title="<u>About</u> <br/> This chart shows the number of likes the post will get based on what time of the day did the admin post it. <br><br> <u>Insights</u> <br> We can tell that post around 8-9am will gather more likes, our prelimiary research told us that instagram user age gap are between 15-35. During that time frame most people are on their way to work thus the probablity where they will use social media platform are higher"><i class="fas fa-info-circle fa-2x"></i></a>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="timepostinsta"></canvas>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-xl-6 col-lg-7">
+                <div class="card shadow mb-4">
+                  <!-- Card Header - Dropdown -->
+                  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Time of Post (Facebook)</h6>
+                    <a data-html="true" href="#" class="show-option" title="<u>About</u> <br/> This chart shows the number of likes the post will get based on what time of the day did the admin post it. <br><br> <u>Insights</u> <br> We can tell that post around 12-1am will gather more likes, this might be due to higher social media usage before people go to bed."><i class="fas fa-info-circle fa-2x"></i></a>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="timepostfb"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h4 mb-0 text-gray-800">Post Frequency</h1>
+          </div>
+
+          <div class="row">
+            <div class="col-xl-12 col-lg-7">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Post Frequency from March 2020 (Instagram)</h6>
+                  <a data-html="true" href="#" class="show-option" title="<u>About</u> <br/> This chart shows the number of likes the post will get based on what time of the day did the admin post it. <br><br> <u>Insights</u> <br> We can tell that post around 8-9am will gather more likes, our prelimiary research told us that instagram user age gap are between 15-35. During that time frame most people are on their way to work thus the probablity where they will use social media platform are higher"><i class="fas fa-info-circle fa-2x"></i></a>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="postfrequency"></canvas>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xl-12 col-lg-7">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Post Frequency from March 2020 (Facebook)</h6>
+                  <a data-html="true" href="#" class="show-option" title="<u>About</u> <br/> This chart shows the number of likes the post will get based on what time of the day did the admin post it. <br><br> <u>Insights</u> <br> We can tell that post around 8-9am will gather more likes, our prelimiary research told us that instagram user age gap are between 15-35. During that time frame most people are on their way to work thus the probablity where they will use social media platform are higher"><i class="fas fa-info-circle fa-2x"></i></a>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="postfrequencyFB"></canvas>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+
+
+          
+
+          
+          <!-- Remove data to separate file for referece -->
+  
+         
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2020</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo_engagement.js"></script>
+  <script src="js/demo/chart-bar-demo_engagement.js"></script>
+  <script src="js/demo/chart-line.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+  <script>
+    /*Populate dashboard - Trigger backend*/
+    $(document).ready(function(){
+      posttypelikes()
+      postcount()
+      loadVideoAnalysis()
+      instaDayPost()
+      facebookDayPost()
+      instaTimePost()
+      facebookTimePost()
+      postFrequency()
+      postFrequencyFB()
+      postInteractionType()
+      postInteractionTypeFb()
+      interactionPostCount()
+
+      $( ".show-option" ).tooltip({
+        show: {
+        effect: "slideUp",
+        delay: 300
+        }
+    });
+    });
+    
+
+    function postcount() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          data = JSON.parse(this.responseText)
+          document.getElementById("image_count").innerHTML = data["GraphImage"]
+          document.getElementById("sidecar_count").innerHTML = data["GraphSidecar"]
+          document.getElementById("video_count").innerHTML = data["GraphVideo"]
+        }
+      };
+      xhttp.open("GET", "http://127.0.0.1:5004/insta/posttypecount", true);
+      xhttp.send();
+    }
+
+    function interactionPostCount() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          data = JSON.parse(this.responseText)["result"]
+          document.getElementById("competiton_count").innerHTML = data["competition"]
+          document.getElementById("featured_count").innerHTML = data["featured"]
+          document.getElementById("info_count").innerHTML = data["infographics"]
+          document.getElementById("others_count").innerHTML = data["others"]
+          document.getElementById("product_count").innerHTML = data["product"]
+          document.getElementById("promotion_count").innerHTML = data["promotion"]
+        }
+      };
+      xhttp.open("GET", "http://127.0.0.1:5004/insta/total_interaction", true);
+      xhttp.send();
+    }
+
+    function genScreenshot() {
+      html2canvas(document.body, {
+        onrendered: function(canvas) {
+        $('#box1').html("");
+        $('#box1').append(canvas);
+        
+        if (navigator.userAgent.indexOf("MSIE ") > 0 || 
+            navigator.userAgent.match(/Trident.*rv\:11\./)) 
+          {
+            var blob = canvas.msToBlob();
+            window.navigator.msSaveBlob(blob,'Post Analysis.png');
+          }
+        else {
+          $('#test').attr('href', canvas.toDataURL("image/png"));
+          $('#test').attr('download','Post Analysis.png');
+          $('#test')[0].click();
+        }
+      }
+      });
+    }
+
+    
+
+
+
+    /*Chart*/ 
+
+   
+
+  </script>
+
+</body>
+
+</html>
