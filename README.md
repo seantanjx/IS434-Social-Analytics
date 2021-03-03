@@ -9,21 +9,21 @@ Businesses: Fresh Fruits Lab, Platform 1094, Herit8ge
 
 1. Main Dashboard
 2. Post Analysis Dashboard
-   Social Media Platforms:
-    - Instagram
-    - Facebook
+    - Social Media Platforms:
+        - Instagram
+        - Facebook
 3. Reviews Analysis Dashboard
-   Review Platforms:
-    - Burpple
-    - Google Reviews
-    - Tripadvisor
+    - Review Platforms:
+        - Burpple
+        - Google Reviews
+        - Tripadvisor
 4. Competitor Analysis Dashboard
-   Competitors:
-    - Windowsill Pies
-    - The White Rabbit
-    - Hatter Street
-    - Enchanted Cafe
-    - Handlebar Original
+    - Competitors:
+        - Windowsill Pies
+        - The White Rabbit
+        - Hatter Street
+        - Enchanted Cafe
+        - Handlebar Original
 5. Influencer Analysis Dashboard
 
 ## Technologies used
