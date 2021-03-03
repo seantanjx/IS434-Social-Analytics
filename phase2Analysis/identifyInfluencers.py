@@ -1,4 +1,4 @@
-### 5. Identify influencers - ZX
+### 5. Identify influencers
 
 # (Amongst the tagged post, who are the influencers of the post? Which influencer is not doing well?)
 
